@@ -26,15 +26,15 @@ import colored
 import requests
 from logzero import setup_logger
 
-from ._wdaproxy import WDAService
-from ._device import Device
-from ._ipautil import IPAReader
-from ._proto import MODELS, PROGRAM_NAME
-from ._relay import relay
-from ._usbmux import Usbmux
-from ._utils import get_app_dir, get_binary_by_name, is_atty
-from ._version import __version__
-from .exceptions import MuxError, MuxServiceError, ServiceError
+from tidevice._wdaproxy import WDAService
+from tidevice._device import Device
+from tidevice._ipautil import IPAReader
+from tidevice._proto import MODELS, PROGRAM_NAME
+from tidevice._relay import relay
+from tidevice._usbmux import Usbmux
+from tidevice._utils import get_app_dir, get_binary_by_name, is_atty
+from tidevice._version import __version__
+from tidevice.exceptions import MuxError, MuxServiceError, ServiceError
 
 um = None  # Usbmux
 logger = logging.getLogger(PROGRAM_NAME)
